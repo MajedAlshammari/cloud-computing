@@ -1,7 +1,14 @@
-list = ["Oxo", "OXO", "123454321", "ROTATOR", "12345 54321"]
+
+nameList = ['Oxo', 'OXO']
+
+inPut = input("Enter a string: ")
+
+name = reversed("oxx")
+rev = reversed(inPut)
 
 
-
-rev_str = reversed("majed")
-
-print(rev_str)
+print(name)
+if list(inPut) == list(rev):
+   print("True ")
+else:
+   print("False")
