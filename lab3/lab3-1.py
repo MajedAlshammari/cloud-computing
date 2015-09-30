@@ -1,14 +1,24 @@
+i = 0
 
-nameList = ['Oxo', 'OXO']
+print("************************* Part 1 *****************************")
+aList = ['Oxo', 'OXO', '123454321', 'ROTATOR', '12345 54321']
 
-inPut = input("Enter a string: ")
+for i in range(len(aList)):
+  name = reversed(aList[i])
+  if list(name) == list(aList[i]):
+    print("True ", aList[i])
+  else:
+      print("False", aList[i])
 
-name = reversed("oxx")
+
+
+
+
+
+print("************************* Part 2 *****************************")
+inPut = input("Enter a String: ")
 rev = reversed(inPut)
-
-
-print(name)
 if list(inPut) == list(rev):
-   print("True ")
+   print("True ", inPut)
 else:
-   print("False")
+   print("False", inPut)
